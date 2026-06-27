@@ -4,6 +4,11 @@ import org.example.demo1.model.bo.InventoryBo;
 
 import java.time.LocalDateTime;
 
+/**
+ * Response VO：接口返回给调用方的数据结构。
+ *
+ * VO 可以只暴露前端需要看的字段，避免把数据库 Entity 原样返回。
+ */
 public class InventoryResponse {
 
     private Long id;

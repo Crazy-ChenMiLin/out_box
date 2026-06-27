@@ -9,6 +9,11 @@ import jakarta.persistence.Table;
 
 import java.time.LocalDateTime;
 
+/**
+ * Entity/PO：和 inventory 数据库表一一映射。
+ *
+ * Entity 主要给 JPA 和数据库使用，不建议直接作为接口入参或返回值。
+ */
 @Entity
 @Table(name = "inventory")
 public class InventoryEntity {
@@ -23,6 +28,7 @@ public class InventoryEntity {
     @Column(nullable = false)
     private Integer quantity;
 
+    @Column(name = "updated_at")
     private LocalDateTime updatedAt;
 
     public InventoryEntity() {

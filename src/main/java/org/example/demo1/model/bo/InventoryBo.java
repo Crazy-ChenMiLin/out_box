@@ -4,6 +4,11 @@ import org.example.demo1.model.entity.InventoryEntity;
 
 import java.time.LocalDateTime;
 
+/**
+ * BO：业务层使用的对象。
+ *
+ * Service 用 BO 表达业务结果，Controller 再把 BO 转成对外返回的 VO。
+ */
 public class InventoryBo {
 
     private Long id;

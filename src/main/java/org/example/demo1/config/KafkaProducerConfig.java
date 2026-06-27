@@ -12,6 +12,12 @@ import org.springframework.kafka.core.ProducerFactory;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Kafka producer configuration used by the Canal outbox bridge and by the
+ * optional fallback poller.
+ *
+ * key/value 都按字符串发送：key 是库存 ID，value 是 outbox payload JSON 字符串。
+ */
 @Configuration
 public class KafkaProducerConfig {
 

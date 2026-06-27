@@ -1,5 +1,10 @@
 package org.example.demo1.model.request;
 
+/**
+ * Request DTO：接口调用方传进来的创建库存参数。
+ *
+ * DTO 只描述“请求需要什么字段”，不要直接拿 Entity 当请求参数。
+ */
 public class CreateInventoryRequest {
 
     private Integer quantity;
@@ -23,4 +28,3 @@ public class CreateInventoryRequest {
         this.quantity = quantity;
     }
 }
-
